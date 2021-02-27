@@ -42,7 +42,7 @@ signingConfigs
 }  
 
 ## Change app icon  
-run `cd android\app\src\main\res\mipmap-xxxhdpi`  
+open in file explore `smartlock\android\app\src\main\res\mipmap-xxxhdpi`  
 add your icon with 192 x 192 pixels  
 
 ## Change app name
