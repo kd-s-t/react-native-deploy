@@ -1,5 +1,10 @@
+Navigate to https://reactnative.dev/docs/environment-setup  
+Choose React Native CLI Quickstart  
+Choose Windows 
+Choose Android  
+npx react-native init smartLock
 
-yarn add react-native-elements react-native-vector-icons react-native-safe-area-context
+[Optional for designs] yarn add react-native-elements react-native-vector-icons react-native-safe-area-context  
 
 
 
