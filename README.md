@@ -18,32 +18,32 @@ cd `smartLock`
 run `keytool -genkeypair -v -keystore reactIot.keystore -alias my-key-alias -keyalg RSA -keysize 2048 -validity 10000`  
 run `cp reactIot ./android/app`  
 
-## Paste the env variables at the end of the file
-run `vim android/gradle.properties`
+## Paste the env variables at the end of the file  
+run `vim android/gradle.properties`  
 MYAPP_RELEASE_STORE_FILE=reactIot.keystore  
 MYAPP_RELEASE_KEY_ALIAS=reactIot  
 MYAPP_RELEASE_STORE_PASSWORD=  
 MYAPP_RELEASE_KEY_PASSWORD=  
 
-## Adding signing config to your app's Gradle config 
+## Adding signing config to your app's Gradle config  
 run `vim ./android/app/build.gradle`  
-signingConfigs
-{
-    release
-    {
-        if (project.hasProperty('MYAPP_RELEASE_STORE_FILE'))
-        {
-            storeFile file(MYAPP_RELEASE_STORE_FILE)
-            storePassword MYAPP_RELEASE_STORE_PASSWORD
-            keyAlias MYAPP_RELEASE_KEY_ALIAS
-            keyPassword MYAPP_RELEASE_KEY_PASSWORD
-        }
-    }
-}
+signingConfigs   
+{  
+    release  
+    {  
+        if (project.hasProperty('MYAPP_RELEASE_STORE_FILE'))  
+        {  
+            storeFile file(MYAPP_RELEASE_STORE_FILE)  
+            storePassword MYAPP_RELEASE_STORE_PASSWORD  
+            keyAlias MYAPP_RELEASE_KEY_ALIAS  
+            keyPassword MYAPP_RELEASE_KEY_PASSWORD  
+        }  
+    }  
+}  
 
-## Change app icon
+## Change app icon  
 run `cd android\app\src\main\res\mipmap-xxxhdpi`  
-add your icon with 192 x 192 pixels
+add your icon with 192 x 192 pixels  
 
 ## Change app name
 run `vim android/app/src/main/res/values/strings.xml`  
