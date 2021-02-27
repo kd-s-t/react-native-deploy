@@ -1,11 +1,13 @@
+#
+
+## To Setup React Native on Windows using Android emulator
 Navigate to https://reactnative.dev/docs/environment-setup  
-Choose React Native CLI Quickstart  
-Choose Windows 
-Choose Android  
-npx react-native init smartLock
-
-[Optional for designs] yarn add react-native-elements react-native-vector-icons react-native-safe-area-context  
-
+Choose `React Native CLI Quickstart`  
+Choose `Windows`  
+Choose `Android`   
+run `npx react-native init smartLock`
+[Optional for designs] run `yarn add react-native-elements react-native-vector-icons react-native-safe-area-context`  
+run `npx react-native run-android`  
 
 
 ## To deploy React Native  
