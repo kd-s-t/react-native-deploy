@@ -6,7 +6,7 @@ Choose `React Native CLI Quickstart`
 Choose `Windows`  
 Choose `Android`   
 run `npx react-native init smartLock`  
-cd `smartLock`  
+run `cd smartLock`  
 [Optional for designs] run `yarn add react-native-elements react-native-vector-icons react-native-safe-area-context`  
 run `npx react-native run-android`  
 
