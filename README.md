@@ -22,8 +22,8 @@ run `cp reactIot ./android/app`
 run `vim android/gradle.properties`  
 MYAPP_RELEASE_STORE_FILE=reactIot.keystore  
 MYAPP_RELEASE_KEY_ALIAS=reactIot  
-MYAPP_RELEASE_STORE_PASSWORD=  
-MYAPP_RELEASE_KEY_PASSWORD=  
+MYAPP_RELEASE_STORE_PASSWORD=123456  
+MYAPP_RELEASE_KEY_PASSWORD=123456  
 
 ## Adding signing config to your app's Gradle config  
 run `vim ./android/app/build.gradle`  
