@@ -11,7 +11,7 @@ run `cd smartLock`
 run `npx react-native run-android`  
 
 
-# To deploy React Native  
+# To deploy React Native in Android Phone  
 ## Generate .keystore file  
 Navigate to https://reactnative.dev/docs/signed-apk-android  
 cd `smartLock`  
