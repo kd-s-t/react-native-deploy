@@ -58,6 +58,6 @@ change app_name
 ## Deploying
 run `cd android`  
 run `gradlew bundleRelease`  
-Check if .apk is available android\app\build\outputs\apk\release  
+Check if .apk is available `android\app\build\outputs\apk\release`  
 Then upload it in your android mobile phone  
 In your phone, double click the APK  
