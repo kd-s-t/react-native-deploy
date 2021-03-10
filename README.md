@@ -15,13 +15,13 @@ run `npx react-native run-android`
 ## Generate .keystore file  
 Navigate to https://reactnative.dev/docs/signed-apk-android  
 cd `smartLock`  
-run `keytool -genkeypair -v -keystore reactIot.keystore -alias my-key-alias -keyalg RSA -keysize 2048 -validity 10000`  
+run `keytool -genkeypair -v -keystore react-iot.keystore -alias my-key-alias -keyalg RSA -keysize 2048 -validity 10000`  
 run `cp reactIot.keystore ./android/app`  
 
 ## Paste the env variables at the end of the file  
 run `vim android/gradle.properties`  
-MYAPP_RELEASE_STORE_FILE=reactIot.keystore  
-MYAPP_RELEASE_KEY_ALIAS=reactIot  
+MYAPP_RELEASE_STORE_FILE=react-iot.keystore  
+MYAPP_RELEASE_KEY_ALIAS=react-iot  
 MYAPP_RELEASE_STORE_PASSWORD=123456  
 MYAPP_RELEASE_KEY_PASSWORD=123456  
 
@@ -38,6 +38,12 @@ signingConfigs
             keyAlias MYAPP_RELEASE_KEY_ALIAS  
             keyPassword MYAPP_RELEASE_KEY_PASSWORD  
         }  
+    }  
+}   
+buildTypes {  
+    release {  
+        ...  
+        signingConfig signingConfigs.release  
     }  
 }  
 
