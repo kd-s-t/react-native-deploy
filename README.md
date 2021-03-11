@@ -29,22 +29,22 @@ MYAPP_RELEASE_KEY_PASSWORD=123456
 run `vim ./android/app/build.gradle`  
 signingConfigs   
 {  
-    release  
-    {  
-        if (project.hasProperty('MYAPP_RELEASE_STORE_FILE'))  
-        {  
-            storeFile file(MYAPP_RELEASE_STORE_FILE)  
-            storePassword MYAPP_RELEASE_STORE_PASSWORD  
-            keyAlias MYAPP_RELEASE_KEY_ALIAS  
-            keyPassword MYAPP_RELEASE_KEY_PASSWORD  
-        }  
-    }  
+&nbsp;&nbsp;release  
+&nbsp;&nbsp;{  
+&nbsp;&nbsp;&nbsp;&nbsp;if (project.hasProperty('MYAPP_RELEASE_STORE_FILE'))  
+&nbsp;&nbsp;&nbsp;&nbsp;{  
+&nbsp;&nbsp;&nbsp;&nbsp;storeFile file(MYAPP_RELEASE_STORE_FILE)  
+&nbsp;&nbsp;&nbsp;&nbsp;storePassword MYAPP_RELEASE_STORE_PASSWORD  
+&nbsp;&nbsp;&nbsp;&nbsp;keyAlias MYAPP_RELEASE_KEY_ALIAS  
+&nbsp;&nbsp;&nbsp;&nbsp;keyPassword MYAPP_RELEASE_KEY_PASSWORD  
+&nbsp;&nbsp;&nbsp;&nbsp;}  
+&nbsp;&nbsp;}  
 }   
 buildTypes {  
-    release {  
-        ...  
-        signingConfig signingConfigs.release  
-    }  
+&nbsp;&nbsp;release {  
+&nbsp;&nbsp;&nbsp;&nbsp;...  
+&nbsp;&nbsp;&nbsp;&nbsp;signingConfig signingConfigs.release  
+&nbsp;&nbsp;}  
 }  
 
 ## Change app icon  
