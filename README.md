@@ -20,10 +20,12 @@ cd `../../`
 
 ## Paste the env variables at the end of the file  
 run `vim android/gradle.properties`  
+```javascript   
 MYAPP_RELEASE_STORE_FILE=react-iot.keystore  
 MYAPP_RELEASE_KEY_ALIAS=react-iot-alias  
 MYAPP_RELEASE_STORE_PASSWORD=123456  
 MYAPP_RELEASE_KEY_PASSWORD=123456  
+```  
 
 ## Adding signing config to your app's Gradle config  
 run `vim ./android/app/build.gradle`  
