@@ -14,7 +14,7 @@ run `npx react-native run-android`
 # To deploy React Native in Android Phone  
 ## Generate .keystore file  
 Navigate to https://reactnative.dev/docs/signed-apk-android  
-cd `smartLock`  
+cd `smartLock/android/app`  
 run `keytool -genkeypair -v -keystore react-iot.keystore -alias react-iot-alias -keyalg RSA -keysize 2048 -validity 10000`  
 run `cp react-iot.keystore ./android/app`  
 
