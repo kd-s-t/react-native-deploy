@@ -16,7 +16,7 @@ run `npx react-native run-android`
 Navigate to https://reactnative.dev/docs/signed-apk-android  
 cd `smartLock/android/app`  
 run `keytool -genkeypair -v -keystore react-iot.keystore -alias react-iot-alias -keyalg RSA -keysize 2048 -validity 10000`  
-run `cp react-iot.keystore ./android/app`  
+cd `../../`  
 
 ## Paste the env variables at the end of the file  
 run `vim android/gradle.properties`  
