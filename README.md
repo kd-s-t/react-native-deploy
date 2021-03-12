@@ -67,4 +67,5 @@ In your phone, double click the APK
 
 
 ## Youtube Tutorial  
+By Following this Tutorial  
 https://youtu.be/EfbRKaPt2S4  
