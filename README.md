@@ -42,12 +42,6 @@ signingConfigs
     }  
   }  
 }   
-buildTypes {  
-  release {  
-    ...  
-    signingConfig signingConfigs.release  
-  }  
-}  
 ```  
 
 ## Change app icon  
