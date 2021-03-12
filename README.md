@@ -64,3 +64,7 @@ run `gradlew bundleRelease`
 Check if .apk is available `android\app\build\outputs\apk\release`  
 Then upload it in your android mobile phone  
 In your phone, double click the APK  
+
+
+## Youtube Tutorial  
+https://youtu.be/EfbRKaPt2S4  
